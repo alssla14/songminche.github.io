@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+      <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation" ><a href="work1.html">자기소개</a></li>
+            <li role="presentation" class="active" ><a href="diary.html">일기장</a></li>
+            <li role="presentation"><a href="goal.html">목표</a></li>
+          </ul>
+          
+<form action="diary">
+    <h2>MEMO</h2>
+    <div>
+    <form action="my-app" method="GET">
+         <label for="usersmemo">제목 : </label>
+         <input type="text" id="usermemo" name="제목" placeholder="제목을 입력하세요"></input>
+    </form>
+    </div>
+
+    <div>
+        <label for="feel">상태: </label>
+        <select name="feel" id="feel">
+            <option value="good">좋음</option>
+            <option value="tired">피곤함</option>
+            <option value="sad">슬픔</option>
+            <option value="soso">그저그럼</option>
+            <option value="angry">화남</option>
+        </select>
+    </div>
+    <div>
+        <label for="memo">메모</label>
+        <textarea name="memo" id="memo" cols="100" rows="10"
+        placeholder="메모하세요"></textarea>
+    </div>
+    
+    <div>
+        <button type="submit" class="btn btn-primary">완료</button>
+    </div>
+</form>
+</body>
+</html>
